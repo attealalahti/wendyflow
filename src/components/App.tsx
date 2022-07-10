@@ -1,8 +1,10 @@
+import HomePage from "./HomePage";
+
 function App() {
     return (
         <div>
             <header>header</header>
-            <section>section</section>
+            <HomePage />
             <footer>footer</footer>
         </div>
     );
