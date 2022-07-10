@@ -5,9 +5,6 @@
     display: flex;
     flex-direction: column;
     padding: 120px;
-}
-
-.HomePage * {
     text-align: center;
     color: white;
 }
@@ -15,4 +12,32 @@
 .HomePage h1 {
     margin: 0;
     margin-bottom: 30px;
+}
+
+.Instagram {
+    display: flex;
+    width: min-content;
+    margin: 15px auto;
+    gap: 1rem;
+    border: 3px white solid;
+    padding: 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 5px rgb(63, 63, 63);
+}
+
+.Instagram:hover {
+    transform: scale(1.1);
+    box-shadow: none;
+}
+
+.Instagram div {
+    color: white;
+    margin: auto;
+    font-size: 20px;
+}
+
+.Logo {
+    width: 60px;
 }

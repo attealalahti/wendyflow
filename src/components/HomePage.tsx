@@ -1,3 +1,4 @@
+import instagramLogo from "../instagram_logo.svg";
 const HomePage = () => {
     return (
         <div className="HomePage">
@@ -20,6 +21,15 @@ const HomePage = () => {
                 cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
                 est laborum.
             </p>
+            <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noreferrer"
+                className="Instagram"
+            >
+                <img src={instagramLogo} alt="Instagram logo" className="Logo" />
+                <div>@instagram_handle</div>
+            </a>
         </div>
     );
 };
