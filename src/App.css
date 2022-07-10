@@ -19,14 +19,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: fit-content;
-    margin: auto;
+    margin: 30px auto;
     gap: 40px;
 }
 
 .Link {
     display: flex;
     width: min-content;
-    margin: 15px auto;
+    margin: auto;
     gap: 1rem;
     border: 3px white solid;
     padding: 15px;
