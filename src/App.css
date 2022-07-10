@@ -14,6 +14,15 @@
     margin-bottom: 30px;
 }
 
+.LinkContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin: auto;
+    gap: 40px;
+}
+
 .Link {
     display: flex;
     width: min-content;

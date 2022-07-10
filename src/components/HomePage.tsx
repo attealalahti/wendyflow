@@ -1,4 +1,5 @@
 import instagramLogo from "../instagram_logo.svg";
+import emailIcon from "../email_icon.svg";
 import Link from "./Link";
 const HomePage = () => {
     return (
@@ -22,11 +23,18 @@ const HomePage = () => {
                 cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
                 est laborum.
             </p>
-            <Link
-                imageData={{ src: instagramLogo, alt: "Instagram Logo" }}
-                text="@instagram_handle"
-                link="https://www.instagram.com"
-            />
+            <div className="LinkContainer">
+                <Link
+                    imageData={{ src: instagramLogo, alt: "Instagram Logo" }}
+                    text="@instagram_handle"
+                    link="https://www.instagram.com"
+                />
+                <Link
+                    imageData={{ src: emailIcon, alt: "Email icon" }}
+                    text="abc@example.com"
+                    link="mailto: abc@example.com"
+                />
+            </div>
         </div>
     );
 };
