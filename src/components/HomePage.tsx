@@ -1,5 +1,5 @@
-import instagramLogo from "../instagram_logo.svg";
-import emailIcon from "../email_icon.svg";
+import instagramLogo from "../images/instagram_logo.svg";
+import emailIcon from "../images/email_icon.svg";
 import Link from "./Link";
 const HomePage = () => {
     return (
