@@ -28,13 +28,13 @@ const HomePage = () => {
                 <div className="LinkContainer">
                     <Link
                         imageData={{ src: instagramLogo, alt: "Instagram Logo" }}
-                        text="@instagram_handle"
-                        link="https://www.instagram.com"
+                        text="@wendyflow_"
+                        link="https://www.instagram.com/wendyflow_"
                     />
                     <Link
                         imageData={{ src: emailIcon, alt: "Email icon" }}
-                        text="abc@example.com"
-                        link="mailto: abc@example.com"
+                        text="wendyflowburlesque@gmail.com"
+                        link="mailto: wendyflowburlesque@gmail.com"
                     />
                     <Link
                         imageData={{ src: ihanaaElamaaLogo, alt: "Ihanaa Elämää Logo" }}
