@@ -100,13 +100,18 @@ header span {
 
 footer {
     background-color: rgb(39, 39, 39);
-    display: flex;
 }
-footer div {
-    margin: 7px auto;
+footer .Inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: fit-content;
+    gap: 10px;
+}
+footer .Inner div {
     color: white;
-    text-align: center;
     font-size: 14px;
+    margin: 7px 0;
 }
 
 @media screen and (min-width: 700px) {
@@ -137,7 +142,11 @@ footer div {
         height: 60px;
     }
 
-    footer div {
+    footer .Inner {
+        gap: 50px;
+    }
+
+    footer .Inner div {
         font-size: 16px;
     }
 }

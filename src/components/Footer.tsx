@@ -1,7 +1,10 @@
 const Footer = () => {
     return (
         <footer>
-            <div>© Copyright 2022 | Atte Ala-Lahti</div>
+            <div className="Inner">
+                <div>Kuva: @Biitujumi PhotoGraphy</div>
+                <div>Sivu: Atte Ala-Lahti</div>
+            </div>
         </footer>
     );
 };
