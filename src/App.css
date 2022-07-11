@@ -28,7 +28,7 @@ header {
 
 header span {
     margin: 0;
-    padding: 7px 40px;
+    padding: 7px 25px;
     font-size: 20px;
     color: white;
 }
@@ -50,18 +50,20 @@ header span {
 
 .HomePage h1 {
     margin: 30px 0;
+    font-size: 28px;
 }
 
 .HomePage p {
     width: 80%;
     margin: 10px auto;
+    font-size: 16px;
 }
 
 .LinkContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: fit-content;
+    width: 90%;
     margin: 40px auto;
     gap: 40px;
 }
@@ -87,11 +89,11 @@ header span {
 .Link div {
     color: white;
     margin: auto;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .Logo {
-    width: 60px;
+    width: 45px;
 }
 
 footer {
@@ -102,4 +104,37 @@ footer div {
     margin: 7px auto;
     color: white;
     text-align: center;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 700px) {
+    header span {
+        padding: 7px 40px;
+    }
+
+    .HomePage h1 {
+        font-size: 34px;
+        margin: 45px 0;
+    }
+
+    .HomePage p {
+        font-size: 18px;
+    }
+
+    .LinkContainer {
+        margin: 60px auto;
+        width: unset;
+    }
+
+    .Link div {
+        font-size: 20px;
+    }
+
+    .Logo {
+        width: 60px;
+    }
+
+    footer div {
+        font-size: 16px;
+    }
 }
