@@ -1,5 +1,6 @@
 import instagramLogo from "../images/instagram_logo.svg";
 import emailIcon from "../images/email_icon.svg";
+import ihanaaElamaaLogo from "../images/ihanaaelamaa_logo.jpg";
 import Link from "./Link";
 const HomePage = () => {
     return (
@@ -33,6 +34,11 @@ const HomePage = () => {
                     imageData={{ src: emailIcon, alt: "Email icon" }}
                     text="abc@example.com"
                     link="mailto: abc@example.com"
+                />
+                <Link
+                    imageData={{ src: ihanaaElamaaLogo, alt: "Ihanaa Elämää Logo" }}
+                    text="ihanaaelamaa.fi"
+                    link="https://www.ihanaaelamaa.fi"
                 />
             </div>
         </div>
