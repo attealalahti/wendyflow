@@ -4,7 +4,7 @@
     background-position: center;
     display: flex;
     flex-direction: column;
-    padding: 120px;
+    padding: 120px 0;
     text-align: center;
     color: white;
 }
@@ -14,12 +14,17 @@
     margin-bottom: 30px;
 }
 
+.HomePage p {
+    width: 80%;
+    margin: 10px auto;
+}
+
 .LinkContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: fit-content;
-    margin: 30px auto;
+    margin: 40px auto;
     gap: 40px;
 }
 
