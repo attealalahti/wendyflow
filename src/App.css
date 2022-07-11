@@ -1,3 +1,26 @@
+html,
+body,
+#root,
+.App {
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer {
+    flex: none;
+}
+
+main {
+    flex: auto;
+}
+
 header {
     display: flex;
     background-color: rgb(175, 21, 214);
@@ -15,15 +38,18 @@ header span {
     background-size: cover;
     background-position: center;
     display: flex;
+}
+
+.HomePage .Inner {
+    display: flex;
     flex-direction: column;
-    padding: 120px 0;
     text-align: center;
     color: white;
+    margin: auto;
 }
 
 .HomePage h1 {
-    margin: 0;
-    margin-bottom: 30px;
+    margin: 30px 0;
 }
 
 .HomePage p {
