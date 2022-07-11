@@ -1,10 +1,11 @@
 import "../App.css";
+import Header from "./Header";
 import HomePage from "./HomePage";
 
 function App() {
     return (
         <div>
-            <header>header</header>
+            <Header />
             <HomePage />
             <footer>footer</footer>
         </div>
