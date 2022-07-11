@@ -23,7 +23,7 @@ main {
 
 header {
     display: flex;
-    background-color: rgb(175, 21, 214);
+    background-color: rgb(117, 15, 15);
 }
 
 header span {
@@ -34,7 +34,7 @@ header span {
 }
 
 .HomePage {
-    background-image: url("https://static.vecteezy.com/system/resources/previews/004/976/308/large_2x/purple-gradient-background-with-textures-free-vector.jpg");
+    background-image: url("./images/background_image.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
