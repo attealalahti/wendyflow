@@ -46,6 +46,7 @@ header span {
     flex-direction: column;
     text-align: center;
     color: white;
+    text-shadow: 0 1.2px #000;
     margin: auto;
 }
 
@@ -120,6 +121,10 @@ footer .Inner div {
         margin: 0;
         padding: 10px 0 7px 40px;
         font-size: 40px;
+    }
+
+    .HomePage .Inner {
+        text-shadow: 0 1.4px #000;
     }
 
     .HomePage h1 {
