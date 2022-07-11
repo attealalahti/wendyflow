@@ -27,9 +27,10 @@ header {
 }
 
 header span {
-    margin: 0;
-    padding: 7px 25px;
-    font-size: 20px;
+    margin: auto;
+    padding: 6px 0 5px 0;
+    font-size: 35px;
+    font-family: "Great Vibes", cursive;
     color: white;
 }
 
@@ -116,7 +117,9 @@ footer .Inner div {
 
 @media screen and (min-width: 700px) {
     header span {
-        padding: 7px 40px;
+        margin: 0;
+        padding: 10px 0 7px 40px;
+        font-size: 40px;
     }
 
     .HomePage h1 {

@@ -1,7 +1,7 @@
 const Header = () => {
     return (
         <header>
-            <span>Website Name</span>
+            <span>Wendy Flow</span>
         </header>
     );
 };
