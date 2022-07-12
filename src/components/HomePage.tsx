@@ -32,14 +32,14 @@ const HomePage = () => {
                         link="https://www.instagram.com/wendyflow_"
                     />
                     <Link
-                        imageData={{ src: emailIcon, alt: "Email icon" }}
-                        text="wendyflowburlesque@gmail.com"
-                        link="mailto: wendyflowburlesque@gmail.com"
-                    />
-                    <Link
                         imageData={{ src: ihanaaElamaaLogo, alt: "Ihanaa Elämää Logo" }}
                         text="ihanaaelamaa.fi"
                         link="https://www.ihanaaelamaa.fi"
+                    />
+                    <Link
+                        imageData={{ src: emailIcon, alt: "Email icon" }}
+                        text="wendyflowburlesque@gmail.com"
+                        link="mailto: wendyflowburlesque@gmail.com"
                     />
                 </div>
             </div>
