@@ -6,24 +6,24 @@ const HomePage = () => {
     return (
         <main className="HomePage">
             <div className="Inner">
-                <h1>Title Goes Here</h1>
+                <h1>Burlesque Artist</h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                    Olen Wendy Flow, burleskitaiteilija Seinäjoelta.
+                    <br />
+                    Olen esiintynyt burleskilavoilla vuodesta 2019. Esiinnyn myös duona
+                    yhdessä aviomieheni Idlemanin kanssa. Tuotan tapahtumia ja työpajoja
+                    Ihanaa Elämää yhdistyksessä.
+                    <br />
+                    Voit tilata meidät myös yksityistapahtumaasi.
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                    I am Wendy Flow, a burlesque artist from Seinäjoki.
+                    <br />
+                    I have performed on burlesque stages from 2019 onwards. I also perform
+                    as a duo together with my husband Idleman. I create events and
+                    workshops in the Ihanaa Elämää association.
+                    <br />
+                    You can book us for your private event as well.
                 </p>
                 <div className="LinkContainer">
                     <Link
