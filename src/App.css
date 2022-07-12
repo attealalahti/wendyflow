@@ -105,15 +105,15 @@ footer {
 }
 footer .Inner {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     margin: auto;
     width: fit-content;
-    gap: 10px;
 }
 footer .Inner div {
     color: white;
     font-size: 14px;
-    margin: 7px 0;
+    margin: 7px;
 }
 
 @media screen and (min-width: 370px) {
