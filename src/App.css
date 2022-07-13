@@ -22,16 +22,57 @@ main {
 }
 
 header {
-    display: flex;
     background-color: rgb(117, 15, 15);
 }
 
-header span {
-    margin: auto;
-    padding: 6px 0 5px 0;
+header .PageName {
+    margin: 12px;
+}
+header .PageName div {
+    display: inline;
     font-size: 35px;
     font-family: "Great Vibes", cursive;
     color: white;
+}
+
+header button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #0000;
+    border: none;
+    margin: 7px 7px 0 0;
+    padding: 0;
+}
+
+header button svg {
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+}
+
+header button svg path {
+    transition: all 0.2s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 25px;
+    background-color: rgb(87, 15, 15);
+}
+
+nav a:hover {
+    background-color: rgb(102, 17, 17);
 }
 
 .HomePage {
@@ -127,12 +168,13 @@ footer .Inner div {
 }
 
 @media screen and (min-width: 700px) {
+    /*
     header span {
         margin: 0;
-        padding: 10px 0 7px 40px;
-        font-size: 40px;
+        padding: 10px 0 7px 100px;
+        font-size: 45px;
     }
-
+    */
     .HomePage .Inner {
         text-shadow: 0 1.4px #000;
     }
