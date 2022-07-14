@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const HAMBURGER_PATH =
     "M4,4 L27,4 C28,4 28,7 27,7 L4,7 C3,7 3,4 4,4 M4,14 L27,14 C28,14 28,17 27,17 L4,17 C3,17 3,14 4,14 M27,27 L4,27 C3,27 3,24 4,24 L27,24 C28,24 28,27 27,27";
@@ -8,6 +9,7 @@ const CROSS_PATH =
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState<boolean>(false);
+    const { t, i18n } = useTranslation();
 
     return (
         <header>
@@ -23,7 +25,7 @@ const Header = () => {
             <nav style={{ display: menuOpen ? "block" : "" }}>
                 <ul>
                     <li>
-                        <Link to="/">Home</Link>
+                        <Link to="/">{t("home")}</Link>
                     </li>
                     <li>
                         <Link to="/gallery">Gallery</Link>
@@ -32,7 +34,11 @@ const Header = () => {
             </nav>
             <button
                 className="LanguageButton"
-                onClick={() => console.log("hello there")}
+                onClick={() =>
+                    i18n.changeLanguage(
+                        i18n.language.substring(0, 3) === "en" ? "fi" : "en"
+                    )
+                }
                 style={{ display: menuOpen ? "block" : "" }}
             >
                 <div>Suomeksi</div>
