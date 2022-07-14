@@ -9,7 +9,7 @@ const CROSS_PATH =
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState<boolean>(false);
-    const { t, i18n } = useTranslation("header");
+    const { t, i18n } = useTranslation();
     const closeMenu = () => {
         setMenuOpen(false);
     };
@@ -31,12 +31,12 @@ const Header = () => {
                 <ul>
                     <li>
                         <Link to="/" onClick={closeMenu}>
-                            {t("home")}
+                            {t("header.home")}
                         </Link>
                     </li>
                     <li>
                         <Link to="/gallery" onClick={closeMenu}>
-                            {t("gallery")}
+                            {t("header.gallery")}
                         </Link>
                     </li>
                 </ul>
@@ -51,7 +51,7 @@ const Header = () => {
                 }}
                 style={{ display: menuOpen ? "block" : "" }}
             >
-                <div>{t("changeLanguage")}</div>
+                <div>{t("header.changeLanguage")}</div>
             </button>
         </header>
     );

@@ -8,10 +8,10 @@ import image6 from "../images/gallery6.jpg";
 import { useTranslation } from "react-i18next";
 
 const GalleryPage = () => {
-    const { t } = useTranslation("gallery");
+    const { t } = useTranslation();
     return (
         <main className="GalleryPage">
-            <h1>{t("gallery")}</h1>
+            <h1>{t("gallery.gallery")}</h1>
             <div className="Inner">
                 <GalleryEntry
                     image={image1}

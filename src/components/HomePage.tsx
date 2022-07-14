@@ -5,18 +5,18 @@ import Link from "./Link";
 import { useTranslation } from "react-i18next";
 
 const HomePage = () => {
-    const { t } = useTranslation("home");
+    const { t } = useTranslation();
 
     return (
         <main className="HomePage">
             <div className="Inner">
-                <h1>{t("title")}</h1>
+                <h1>{t("home.title")}</h1>
                 <p>
-                    {t("intro1")}
+                    {t("home.intro1")}
                     <br />
-                    {t("intro2")}
+                    {t("home.intro2")}
                     <br />
-                    {t("intro3")}
+                    {t("home.intro3")}
                 </p>
                 <div className="LinkContainer">
                     <Link
@@ -30,12 +30,12 @@ const HomePage = () => {
                         link="https://www.ihanaaelamaa.fi"
                     />
                     <Link
-                        imageData={{ src: emailIcon, alt: t("email") }}
+                        imageData={{ src: emailIcon, alt: t("home.email") }}
                         text="wendyflowburlesque@gmail.com"
                         link="mailto: wendyflowburlesque@gmail.com"
                     />
                 </div>
-                <span className="PhotoCredit">{t("photoCredit")}</span>
+                <span className="PhotoCredit">{t("home.photoCredit")}</span>
             </div>
         </main>
     );
