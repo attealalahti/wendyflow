@@ -2,28 +2,21 @@ import instagramLogo from "../images/instagram_logo.svg";
 import emailIcon from "../images/email_icon.svg";
 import ihanaaElamaaLogo from "../images/ihanaaelamaa_logo.jpg";
 import Link from "./Link";
+import { useTranslation } from "react-i18next";
+
 const HomePage = () => {
+    const { t } = useTranslation("home");
+
     return (
         <main className="HomePage">
             <div className="Inner">
-                <h1>Burlesque Artist</h1>
+                <h1>{t("title")}</h1>
                 <p>
-                    Olen Wendy Flow, burleskitaiteilija Seinäjoelta.
+                    {t("intro1")}
                     <br />
-                    Olen esiintynyt burleskilavoilla vuodesta 2019. Esiinnyn myös duona
-                    yhdessä aviomieheni Idlemanin kanssa. Tuotan tapahtumia ja työpajoja
-                    Ihanaa Elämää yhdistyksessä.
+                    {t("intro2")}
                     <br />
-                    Voit tilata meidät myös yksityistapahtumaasi.
-                </p>
-                <p>
-                    I am Wendy Flow, a burlesque artist from Seinäjoki.
-                    <br />
-                    I have performed on burlesque stages from 2019 onwards. I also perform
-                    as a duo together with my husband Idleman. I create events and
-                    workshops in the Ihanaa Elämää association.
-                    <br />
-                    You can book us for your private event as well.
+                    {t("intro3")}
                 </p>
                 <div className="LinkContainer">
                     <Link
@@ -37,7 +30,7 @@ const HomePage = () => {
                         link="https://www.ihanaaelamaa.fi"
                     />
                     <Link
-                        imageData={{ src: emailIcon, alt: "Email icon" }}
+                        imageData={{ src: emailIcon, alt: t("email") }}
                         text="wendyflowburlesque@gmail.com"
                         link="mailto: wendyflowburlesque@gmail.com"
                     />
