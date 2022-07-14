@@ -14,12 +14,13 @@ const Header = () => {
             <div className="PageName">
                 <Link to="/">Wendy Flow</Link>
             </div>
-            <button onClick={() => setMenuOpen(!menuOpen)}>
+            <button className="MenuButton" onClick={() => setMenuOpen(!menuOpen)}>
                 <svg viewBox="0 0 32 32">
                     <path fill="white" d={menuOpen ? CROSS_PATH : HAMBURGER_PATH} />
                 </svg>
             </button>
-            <nav style={{ display: menuOpen ? "unset" : "none" }}>
+            <div className="Filler"></div>
+            <nav style={{ display: menuOpen ? "block" : "" }}>
                 <ul>
                     <li>
                         <Link to="/">Home</Link>
@@ -29,6 +30,13 @@ const Header = () => {
                     </li>
                 </ul>
             </nav>
+            <button
+                className="LanguageButton"
+                onClick={() => console.log("hello there")}
+                style={{ display: menuOpen ? "block" : "" }}
+            >
+                <div>Suomeksi</div>
+            </button>
         </header>
     );
 };
