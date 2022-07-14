@@ -12,7 +12,7 @@ const Header = () => {
     return (
         <header>
             <div className="PageName">
-                <div>Wendy Flow</div>
+                <Link to="/">Wendy Flow</Link>
             </div>
             <button onClick={() => setMenuOpen(!menuOpen)}>
                 <svg viewBox="0 0 32 32">
