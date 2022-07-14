@@ -10,11 +10,16 @@ const CROSS_PATH =
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState<boolean>(false);
     const { t, i18n } = useTranslation("header");
+    const closeMenu = () => {
+        setMenuOpen(false);
+    };
 
     return (
         <header>
             <div className="PageName">
-                <Link to="/">Wendy Flow</Link>
+                <Link to="/" onClick={closeMenu}>
+                    Wendy Flow
+                </Link>
             </div>
             <button className="MenuButton" onClick={() => setMenuOpen(!menuOpen)}>
                 <svg viewBox="0 0 32 32">
@@ -25,20 +30,25 @@ const Header = () => {
             <nav style={{ display: menuOpen ? "block" : "" }}>
                 <ul>
                     <li>
-                        <Link to="/">{t("home")}</Link>
+                        <Link to="/" onClick={closeMenu}>
+                            {t("home")}
+                        </Link>
                     </li>
                     <li>
-                        <Link to="/gallery">{t("gallery")}</Link>
+                        <Link to="/gallery" onClick={closeMenu}>
+                            {t("gallery")}
+                        </Link>
                     </li>
                 </ul>
             </nav>
             <button
                 className="LanguageButton"
-                onClick={() =>
+                onClick={() => {
+                    closeMenu();
                     i18n.changeLanguage(
                         i18n.language.substring(0, 2) === "en" ? "fi" : "en"
-                    )
-                }
+                    );
+                }}
                 style={{ display: menuOpen ? "block" : "" }}
             >
                 <div>{t("changeLanguage")}</div>
