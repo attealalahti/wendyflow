@@ -3,7 +3,7 @@ interface ImageData {
     alt: string;
 }
 interface Props {
-    imageData?: ImageData;
+    imageData: ImageData;
     text: string;
     link: string;
 }
