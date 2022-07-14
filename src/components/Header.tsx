@@ -9,7 +9,7 @@ const CROSS_PATH =
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState<boolean>(false);
-    const { t, i18n } = useTranslation();
+    const { t, i18n } = useTranslation("header");
 
     return (
         <header>
@@ -28,7 +28,7 @@ const Header = () => {
                         <Link to="/">{t("home")}</Link>
                     </li>
                     <li>
-                        <Link to="/gallery">Gallery</Link>
+                        <Link to="/gallery">{t("gallery")}</Link>
                     </li>
                 </ul>
             </nav>
@@ -36,12 +36,12 @@ const Header = () => {
                 className="LanguageButton"
                 onClick={() =>
                     i18n.changeLanguage(
-                        i18n.language.substring(0, 3) === "en" ? "fi" : "en"
+                        i18n.language.substring(0, 2) === "en" ? "fi" : "en"
                     )
                 }
                 style={{ display: menuOpen ? "block" : "" }}
             >
-                <div>Suomeksi</div>
+                <div>{t("changeLanguage")}</div>
             </button>
         </header>
     );
