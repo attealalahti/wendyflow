@@ -35,6 +35,7 @@ const HomePage = () => {
                         link="mailto: wendyflowburlesque@gmail.com"
                     />
                 </div>
+                <span className="PhotoCredit">{t("photoCredit")}</span>
             </div>
         </main>
     );

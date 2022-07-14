@@ -164,9 +164,15 @@ nav a:hover,
     border-radius: 12px;
 }
 
+.PhotoCredit {
+    margin: 10px;
+    font-size: 14px;
+}
+
 footer {
     background-color: rgb(39, 39, 39);
 }
+
 footer .Inner {
     display: flex;
     justify-content: center;
@@ -271,6 +277,10 @@ footer .Inner div {
     .Logo {
         width: 60px;
         height: 60px;
+    }
+
+    .PhotoCredit {
+        font-size: 16px;
     }
 
     footer .Inner {
