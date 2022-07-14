@@ -1,9 +1,11 @@
+import { useTranslation } from "react-i18next";
+
 const Footer = () => {
+    const { t } = useTranslation("footer");
     return (
         <footer>
             <div className="Inner">
-                <div>Photo: @Biitujumi PhotoGraphy</div>
-                <div>Web Page: Atte Ala-Lahti</div>
+                <div>{t("siteCredit")}</div>
             </div>
         </footer>
     );
