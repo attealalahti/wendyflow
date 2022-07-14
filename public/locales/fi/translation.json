@@ -2,7 +2,8 @@
     "header": {
         "home": "Koti",
         "gallery": "Galleria",
-        "changeLanguage": "In English"
+        "changeLanguage": "In English",
+        "menuButton": "Navigaatiovalikko"
     },
     "home": {
         "title": "Burleskitaiteilija",

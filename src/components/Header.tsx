@@ -21,7 +21,11 @@ const Header = () => {
                     Wendy Flow
                 </Link>
             </div>
-            <button className="MenuButton" onClick={() => setMenuOpen(!menuOpen)}>
+            <button
+                aria-label={t("header.menuButton")}
+                className="MenuButton"
+                onClick={() => setMenuOpen(!menuOpen)}
+            >
                 <svg viewBox="0 0 32 32">
                     <path fill="white" d={menuOpen ? CROSS_PATH : HAMBURGER_PATH} />
                 </svg>
