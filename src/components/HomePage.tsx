@@ -1,6 +1,6 @@
 import instagramLogo from "../images/instagram_logo.svg";
 import emailIcon from "../images/email_icon.svg";
-import ihanaaElamaaLogo from "../images/ihanaaelamaa_logo.jpg";
+import ihanaaElamaaLogo from "../images/ihanaaelamaa_logo.avif";
 import Link from "./Link";
 import { useTranslation } from "react-i18next";
 
