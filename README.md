@@ -7,3 +7,9 @@ Atte Ala-Lahti
 
 # Technologies
 A static site created with React and hosted on Netlify.
+
+# Screenshots
+![Home page on desktop](screenshots/home_large.PNG)
+![Gallery page on desktop](screenshots/gallery_large.PNG)
+![Home page on mobile](screenshots/home_small.PNG)
+![Gallery page on mobile](screenshots/gallery_small.PNG)
