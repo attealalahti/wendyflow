@@ -4,25 +4,29 @@ import HomePage from "./HomePage";
 import Footer from "./Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import GalleryPage from "./GalleryPage";
-import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const App = () => {
-    const { t, i18n } = useTranslation();
-    useEffect(() => {
-        document.title = t("meta.title");
-    }, [t, i18n.language]);
+    const { t } = useTranslation();
     return (
-        <BrowserRouter>
-            <div className="App">
-                <Header />
-                <Routes>
-                    <Route path="/" element={<HomePage />} />
-                    <Route path="/gallery" element={<GalleryPage />} />
-                </Routes>
-                <Footer />
-            </div>
-        </BrowserRouter>
+        <HelmetProvider>
+            <BrowserRouter>
+                <Helmet>
+                    <title>{t("meta.title")}</title>
+                    <meta name="description" content={t("meta.description")} />
+                    <html lang={t("meta.lang")} />
+                </Helmet>
+                <div className="App">
+                    <Header />
+                    <Routes>
+                        <Route path="/" element={<HomePage />} />
+                        <Route path="/gallery" element={<GalleryPage />} />
+                    </Routes>
+                    <Footer />
+                </div>
+            </BrowserRouter>
+        </HelmetProvider>
     );
 };
 

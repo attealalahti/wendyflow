@@ -1,6 +1,8 @@
 {
     "meta": {
-        "title": "Wendy Flow - Burlesque Artist"
+        "title": "Wendy Flow - Burlesque Artist",
+        "description": "Burlesque artist from Seinäjoki.",
+        "lang": "en"
     },
     "header": {
         "home": "Home",

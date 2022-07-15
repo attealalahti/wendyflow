@@ -49,9 +49,7 @@ const Header = () => {
                 className="LanguageButton"
                 onClick={() => {
                     closeMenu();
-                    i18n.changeLanguage(
-                        i18n.language.substring(0, 2) === "en" ? "fi" : "en"
-                    );
+                    i18n.changeLanguage(t("meta.lang") === "en" ? "fi" : "en");
                 }}
                 style={{ display: menuOpen ? "block" : "" }}
             >

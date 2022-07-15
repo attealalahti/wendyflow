@@ -1,6 +1,8 @@
 {
     "meta": {
-        "title": "Wendy Flow - Burleskitaiteilija"
+        "title": "Wendy Flow - Burleskitaiteilija",
+        "description": "Burleskitaiteilija Seinäjoelta.",
+        "lang": "fi"
     },
     "header": {
         "home": "Koti",
