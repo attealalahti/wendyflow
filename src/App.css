@@ -30,15 +30,13 @@ header {
 }
 
 header .PageName {
-    margin: 12px 0;
+    margin: 0;
 }
-header .PageName a {
-    text-decoration: none;
+header .PageName img {
     display: inline;
-    font-size: 35px;
-    font-family: "Great Vibes", cursive;
-    color: white;
-    padding: 12px;
+    width: 200px;
+    height: 100%;
+    padding: 12px 10px;
 }
 
 header .MenuButton {
@@ -255,12 +253,13 @@ footer .Inner div {
     }
 
     header .PageName {
-        margin-left: 40px;
+        margin-left: 50px;
         flex: none;
     }
 
-    header .PageName a {
-        font-size: 45px;
+    header .PageName img {
+        width: 230px;
+        padding: 0;
     }
 
     header .MenuButton {
