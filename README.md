@@ -6,7 +6,7 @@ https://wendyflow.com
 Atte Ala-Lahti
 
 # Technologies
-A static site created with React and hosted on Netlify.
+A static site created with Next.js and hosted on Netlify.
 
 # Screenshots
 ![Home page on desktop](screenshots/home_large.PNG)
