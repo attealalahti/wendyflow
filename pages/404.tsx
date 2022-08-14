@@ -10,6 +10,7 @@ const Custom404: NextPage = () => {
       <Head>
         <title>{t("meta.homeTitle")}</title>
         <meta name="description" content={t("meta.homeDescription")} />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1 className="Error">{t("404")}</h1>
     </main>

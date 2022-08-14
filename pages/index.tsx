@@ -14,6 +14,7 @@ const Home: NextPage = () => {
       <Head>
         <title>{t("meta.homeTitle")}</title>
         <meta name="description" content={t("meta.homeDescription")} />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="Inner">
         <h1>{t("home.title")}</h1>

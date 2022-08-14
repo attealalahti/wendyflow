@@ -23,6 +23,7 @@ const Gallery: NextPage = () => {
       <Head>
         <title>{t("meta.galleryTitle")}</title>
         <meta name="description" content={t("meta.galleryDescription")} />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1>{t("gallery.gallery")}</h1>
       <div className="Inner">
