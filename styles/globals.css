@@ -1,0 +1,330 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#__next {
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+footer {
+  flex: none;
+}
+
+main {
+  flex: auto;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+header {
+  background-color: rgb(117, 15, 15);
+}
+
+header .PageName {
+  padding: 12px 0;
+  background-color: inherit;
+}
+
+header .PageName a {
+  text-decoration: none;
+  display: inline;
+  font-size: 35px;
+  font-family: "Great Vibes", cursive;
+  color: white;
+  padding: 12px;
+}
+
+header .MenuButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #0000;
+  border: none;
+  margin: 7px 7px 0 0;
+  padding: 0;
+}
+
+header button svg {
+  width: 45px;
+  height: 45px;
+  padding: 5px;
+}
+
+header button svg path {
+  transition: all 0.2s ease-in-out;
+}
+
+nav {
+  display: none;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 15px 25px;
+  background-color: rgb(87, 15, 15);
+}
+
+nav a:hover {
+  background-color: rgb(102, 17, 17);
+}
+
+.Error {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.HomePage {
+  background-image: url("/images/background_image.avif");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+
+.HomePage .Inner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  text-shadow: 0 1.2px #000;
+  margin: auto;
+}
+
+.HomePage h1 {
+  margin: 90px 0;
+  font-size: 28px;
+  text-shadow: 0 2px #000;
+}
+
+.HomePage p {
+  width: 80%;
+  margin: 40px auto;
+  font-size: 16px;
+}
+
+.LinkContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-width: 90%;
+  margin: 40px auto;
+  gap: 40px;
+}
+
+.Link {
+  display: flex;
+  width: min-content;
+  margin: auto;
+  gap: 1rem;
+  border: 3px white solid;
+  padding: 10px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 5px rgb(63, 63, 63);
+}
+
+.Link:hover {
+  transform: scale(1.1);
+  box-shadow: none;
+}
+
+.Link div {
+  color: white;
+  margin: auto;
+  font-size: 16px;
+}
+
+.Logo {
+  border-radius: 12px;
+}
+
+.PhotoCredit {
+  margin: 10px;
+  font-size: 14px;
+}
+
+.GalleryPage {
+  display: flex;
+  flex-direction: column;
+}
+
+.GalleryPage h1 {
+  text-align: center;
+  flex: none;
+}
+
+.GalleryPage .Inner {
+  max-width: 1200px;
+  flex: auto;
+  margin: auto;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.GalleryEntry {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  color: black;
+  padding: 20px 10px 0 10px;
+}
+
+.GalleryEntry:hover {
+  transform: scale(1.1);
+}
+
+.GalleryEntry img {
+  box-sizing: border-box;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.GalleryEntry div {
+  box-sizing: border-box;
+  max-width: 320px;
+  padding: 10px 10px 15px 10px;
+  display: inline;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+footer {
+  background-color: rgb(39, 39, 39);
+}
+
+footer .Inner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  width: fit-content;
+}
+
+footer .Inner div {
+  color: white;
+  font-size: 14px;
+  margin: 7px;
+}
+
+@media screen and (min-width: 370px) {
+  .Link {
+    padding: 15px;
+  }
+
+  .Link div {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  header {
+    display: flex;
+  }
+
+  header .PageName {
+    margin-left: 35px;
+    flex: none;
+  }
+
+  header .PageName a {
+    font-size: 45px;
+  }
+
+  header .MenuButton {
+    display: none;
+  }
+
+  header .Filler {
+    flex: auto;
+  }
+
+  nav {
+    display: block;
+    flex: none;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin-right: 35px;
+  }
+
+  nav a {
+    font-size: 22px;
+    box-sizing: border-box;
+    height: 100%;
+    line-height: 50px;
+    background-color: inherit;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+    background-color: inherit;
+  }
+
+  .HomePage .Inner {
+    text-shadow: 0 1.4px #000;
+  }
+
+  .HomePage h1 {
+    font-size: 34px;
+    margin: 45px 0;
+  }
+
+  .HomePage p {
+    font-size: 18px;
+  }
+
+  .LinkContainer {
+    margin: 60px auto;
+    min-width: unset;
+  }
+
+  .Link div {
+    font-size: 20px;
+  }
+
+  .PhotoCredit {
+    font-size: 16px;
+  }
+
+  footer .Inner {
+    gap: 50px;
+  }
+
+  footer .Inner div {
+    font-size: 16px;
+  }
+}
