@@ -1,4 +1,5 @@
-import Image, { StaticImageData } from "next/image";
+/* eslint-disable @next/next/no-img-element */
+import type { StaticImageData } from "next/image";
 
 interface GalleryEntryProps {
   image: StaticImageData;
@@ -14,7 +15,7 @@ const GalleryEntry = (props: GalleryEntryProps) => {
       target="_blank"
       rel="noreferrer"
     >
-      <Image src={props.image} alt={props.alt} width={300} height={300} />
+      <img src={props.image.src} alt={props.alt} />
       <div>{props.credit}</div>
     </a>
   );
