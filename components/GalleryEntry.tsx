@@ -15,7 +15,7 @@ const GalleryEntry = (props: GalleryEntryProps) => {
       target="_blank"
       rel="noreferrer"
     >
-      <img src={props.image.src} alt={props.alt} />
+      <img src={props.image.src} alt={props.alt} width={300} height={300} />
       <div>{props.credit}</div>
     </a>
   );
